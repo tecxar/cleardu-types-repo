@@ -1,5 +1,5 @@
 import session from 'express-session';
-import { User } from './user.type';
+import { User } from './user.interface';
 
 export interface TokenData {
   token: string;

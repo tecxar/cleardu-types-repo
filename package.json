@@ -1,6 +1,6 @@
 {
   "name": "typeprovider",
-  "version": "1.0.41",
+  "version": "1.0.44",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
