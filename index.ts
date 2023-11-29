@@ -1,4 +1,4 @@
-import * as auth from "./src/auth.type"
+import * as auth from "./src/auth.type";
 
 export default { ...auth }
 
