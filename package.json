@@ -1,6 +1,6 @@
 {
-  "name": "typeprovider",
-  "version": "1.0.46",
+  "name": "cleardu-typeprovider",
+  "version": "1.0.48",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
