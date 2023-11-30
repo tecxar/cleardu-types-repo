@@ -1,6 +1,6 @@
 {
   "name": "cleardu-typeprovider",
-  "version": "https://github.com/tecxar/cleardu-types-repo/tree/sprint/decemeber",
+  "version": "1.0.50",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
