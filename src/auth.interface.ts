@@ -1,24 +1,35 @@
-import session from 'express-session';
-import { User } from './user.interface';
+interface IGetModulesForSideBarMenu {
+  title: string;
+  link: string;
+  icon: string;
+  page: IGetSlug[];
+}
 
-export interface TokenData {
-  token: string;
-  expiresIn: number;
+interface IGetSlug {
+  slug: string;
 }
 
 export interface Login {
+  id: number;
   username: string;
-  password: string;
-}
-
-export interface session extends session.Session {
-  user: User;
-}
-
-export enum SlugType {
-  admin = 'admin',
-  techLead = 'tech_lead',
-  supervisor = 'supervisor',
-  authorizationOfficer = 'authorization_officer',
-  agent = 'agent',
+  roleId: number;
+  firstName: string;
+  lastName: string;
+  role: string;
+  agentId?: string;
+  get isAdmin(): boolean;
+  processId?: number;
+  agentStatus?: string;
+  processName?: string;
+  doj?: string;
+  dob?: string;
+  officeLocation?: string;
+  slug?: string;
+  supervisor?: string;
+  supervisorId?: number;
+  modulesForMenu?: IGetModulesForSideBarMenu[];
+  permissions?: string[];
+  collection?: Boolean;
+  legal?: Boolean;
+  aoS3Key?: string;
 }
