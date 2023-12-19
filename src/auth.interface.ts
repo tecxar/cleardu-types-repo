@@ -1,11 +1,11 @@
-interface IGetModulesForSideBarMenu {
+interface GetModulesForSideBarMenu {
   title: string;
   link: string;
   icon: string;
-  page: IGetSlug[];
+  page: GetSlug[];
 }
 
-interface IGetSlug {
+interface GetSlug {
   slug: string;
 }
 
@@ -27,7 +27,7 @@ export interface Login {
   slug?: string;
   supervisor?: string;
   supervisorId?: number;
-  modulesForMenu?: IGetModulesForSideBarMenu[];
+  modulesForMenu?: GetModulesForSideBarMenu[];
   permissions?: string[];
   collection?: Boolean;
   legal?: Boolean;

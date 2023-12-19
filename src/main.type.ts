@@ -3,6 +3,7 @@ export interface ResponseCountRows<T> {
   rows: T;
 }
 
+
 export interface Response<T> {
   status: boolean;
   data: ResponseCountRows<T> | null;
