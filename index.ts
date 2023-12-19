@@ -1,5 +1,4 @@
 import * as auth from "./src/auth.interface";
-import * as agentStatus from "./src/agentStatus.interface"
+import * as main from "./src/main.type";
 
-export default { ...auth , ...agentStatus }
-
+export default { ...auth, ...main };

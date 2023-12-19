@@ -5,6 +5,6 @@ export interface ResponseCountRows<T> {
 
 export interface Response<T> {
   status: boolean;
-  data: ResponseCountRows<T>;
+  data: ResponseCountRows<T> | null;
   message: string;
 }
