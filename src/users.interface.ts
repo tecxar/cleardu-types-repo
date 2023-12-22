@@ -18,6 +18,7 @@ export interface User {
     // role: string;
     // agentId: string;
     isActive: boolean;
+    aoS3Key?: string | null;
   }
   
   export interface DialerUser {
@@ -29,21 +30,11 @@ export interface User {
     isActive: boolean;
     extensionNumber: number;
   }
+
   export interface UserManager {
+    id?: number;
     userId: number;
     managerId: number;
-  }
-  export interface UserRowsCount {
-    count: number;
-    rows: User[];
-  }
-  
-  export interface FieldsToUpdate {
-    first_name?: string;
-    last_name?: string;
-    email?: string;
-    extensionNumber?: number;
-    password?: string;
   }
   
   export interface UserData {
@@ -54,14 +45,14 @@ export interface User {
     legalCount: number;
     collectionCount: number;
   }
-  
+
   export interface SupervisorPlatformData {
     id: number;
     supervisorId: number;
     legal: number;
     collection: number;
   }
-  
+
   export interface UserDetails {
     id: number;
     name?: string;
