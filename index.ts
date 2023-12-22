@@ -1,4 +1,4 @@
-import * as auth from "./src/auth.type"
+import * as auth from "./src/auth.interface";
+import * as main from "./src/main.type";
 
-export default { ...auth }
-
+export default { ...auth, ...main };
