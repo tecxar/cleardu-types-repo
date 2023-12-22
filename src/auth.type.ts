@@ -6,6 +6,11 @@ export interface TokenData {
   expiresIn: number;
 }
 
+export interface Login {
+  username: string;
+  password: string;
+}
+
 export interface session extends session.Session {
   user: User;
 }
