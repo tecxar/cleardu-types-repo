@@ -16,7 +16,7 @@ export interface AgentActivities {
   avgLogin: string;
   avgLogout: string;
 }
-export interface agentActivitiesSearchData {
+export interface AgentActivitiesSearchData {
   page?: number;
   pageSize?: number;
   searchStr?: string;
@@ -28,7 +28,7 @@ export interface agentActivitiesSearchData {
   };
 }
 
-export interface AgentActivitiesRowsCount {
-  count: number;
-  rows: AgentActivities[];
-}
+// export interface AgentActivitiesRowsCount {
+//   count: number;
+//   rows: AgentActivities[];
+// }
