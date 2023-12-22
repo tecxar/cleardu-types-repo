@@ -1,5 +1,5 @@
 {
-  "name": "typeprovider",
+  "name": "cleardu-typeprovider",
   "version": "1.0.70",
   "main": "index.js",
   "private": true,
