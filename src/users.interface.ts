@@ -70,3 +70,4 @@ export interface User {
     legal?: number | null;
     collection?: number | null;
   }
+  
