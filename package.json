@@ -1,13 +1,9 @@
 {
-  "name": "cleardu-typeprovider",
-  "version": "1.0.70",
-  "main": "index.ts",
+  "name": "cleardu-types-repo",
+  "version": "1.0.0",
   "private": true,
-  "license": "MIT",
-  "devDependencies": {
-    "typescript": "^5.3.2"
-  },
-  "dependencies": {
-    "private-repo": "git+https://github.com/tecxar/cleardu-types-repo.git"
-  }
+  "main": "index.js",
+  "repository": "https://github.com/tecxar/cleardu-types-repo.git",
+  "author": "taha-tecxar <taha.virdiwala@tecxar.io>",
+  "license": "MIT"
 }
