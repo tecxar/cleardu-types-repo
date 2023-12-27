@@ -10,5 +10,7 @@
   "dependencies": {
     "@types/express-session": "^1.17.10",
     "private-repo": "git+https://github.com/tecxar/cleardu-types-repo.git"
-  }
+  },
+  "repository": "https://github.com/tecxar/cleardu-types-repo.git",
+  "author": "taha-tecxar <taha.virdiwala@tecxar.io>"
 }
