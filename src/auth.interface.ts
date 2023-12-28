@@ -9,7 +9,7 @@ interface GetSlug {
   slug: string;
 }
 
-export default interface Login {
+interface Login {
   id: number;
   username: string;
   roleId: number;
@@ -34,4 +34,4 @@ export default interface Login {
   aoS3Key?: string;
 }
 
-export { GetModulesForSideBarMenu, GetSlug  }
+export { GetModulesForSideBarMenu, GetSlug, Login  }
