@@ -9,7 +9,7 @@ interface GetSlug {
   slug: string;
 }
 
-export interface Login {
+interface Login {
   id: number;
   username: string;
   roleId: number;
@@ -33,3 +33,4 @@ export interface Login {
   legal?: Boolean;
   aoS3Key?: string;
 }
+export { GetModulesForSideBarMenu, GetSlug, Login  }
