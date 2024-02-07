@@ -34,4 +34,4 @@ interface Login {
   aoS3Key?: string;
 }
 
-export { GetModulesForSideBarMenu, GetSlug, Login  }
+export  default { GetModulesForSideBarMenu, GetSlug, Login  }
