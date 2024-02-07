@@ -6,5 +6,8 @@
   "type": "module",
   "repository": "git+https://github.com/tecxar/cleardu-types-repo.git",
   "author": "taha-tecxar <taha.virdiwala@tecxar.io>",
-  "license": "MIT"
+  "license": "MIT",
+  "exports": {
+    "master": "./index.ts"
+  }
 }
