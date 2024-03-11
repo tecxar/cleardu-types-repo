@@ -1,4 +1,4 @@
-export interface IPayments {
+ interface IPayments {
     id?: number;
     customerId?: number;
     clientName?: string;
@@ -16,3 +16,5 @@ export interface IPayments {
     email?: string;
     phone?: string;
   }
+
+  export { IPayments }

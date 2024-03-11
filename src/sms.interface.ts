@@ -1,10 +1,10 @@
-export enum MessageDirection {
+ enum MessageDirection {
     in = 'IN',
     out = 'OUT',
   }
 
 
-  export enum MessageStatus {
+   enum MessageStatus {
     QUEUED = 'QUEUED',
     SENT = 'SENT',
     PROCESSING = 'PROCESSING',
@@ -13,7 +13,7 @@ export enum MessageDirection {
     SEEN = 'SEEN',
   } 
 
-  export enum SMSMessageStatus {
+   enum SMSMessageStatus {
     QUEUED = 'QUEUED',
     SENT = 'SENT',
     DELIVRD = 'DELIVERED',
@@ -23,7 +23,7 @@ export enum MessageDirection {
     REJECTED = 'REJECTED',
   }
   
-  export enum CallStatus {
+   enum CallStatus {
     QUEUED = 'QUEUED',
     CALLED = 'CALLED',
     PROCESSING = 'PROCESSING',
@@ -32,7 +32,7 @@ export enum MessageDirection {
     REJECTED = 'REJECTED',
   }
 
-  export interface SMS {
+   interface SMS {
     id?: number;
     customerID?: number;
     loanNumber: string;
@@ -49,3 +49,4 @@ export enum MessageDirection {
     messageFileId?: number;
   }
   
+  export { MessageDirection, SMS, CallStatus, SMSMessageStatus, MessageStatus,  }

@@ -1,4 +1,4 @@
-export type ClientResponse = {
+ interface ClientResponse  {
     id?: number;
     name: string;
     contactPerson?: string;
@@ -12,3 +12,4 @@ export type ClientResponse = {
     state?: string;
     isISG?: number;
   }
+  export { ClientResponse }

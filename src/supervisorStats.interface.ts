@@ -1,4 +1,4 @@
-export interface SupervisorStats {
+ interface SupervisorStats {
     id?: number;
     processId?: number;
     supervisorId?: number;
@@ -7,3 +7,4 @@ export interface SupervisorStats {
     casesAttempetdCount?: number;
   }
   
+  export { SupervisorStats }

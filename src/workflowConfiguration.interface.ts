@@ -1,4 +1,4 @@
-export interface IWorkflowConfiguration {
+ interface IWorkflowConfiguration {
     id: number;
     processConfigId: number;
     dpd: number;
@@ -7,11 +7,11 @@ export interface IWorkflowConfiguration {
     isActive: boolean;
   }
   
-  export type IProcessConfigResponse = {
+   type IProcessConfigResponse = {
     workflowConfigData: IWorkflowConfiguration[];
   };
   
-export interface IWorkflowConfigurationData {
+ interface IWorkflowConfigurationData {
     workflowSubcategoryId: number;
     processConfigId: number;
     dpd: number;
@@ -20,3 +20,4 @@ export interface IWorkflowConfigurationData {
     isActive: boolean;
   }
 
+export { IWorkflowConfiguration, IProcessConfigResponse, IWorkflowConfigurationData  }

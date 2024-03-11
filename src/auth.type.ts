@@ -1,19 +1,19 @@
-import { User } from './user.type';
-
-export interface TokenData {
+ interface TokenData {
   token: string;
   expiresIn: number;
 }
 
-export interface Login {
+ interface Login {
   username: string;
   password: string;
 }
 
-export enum SlugType {
+ enum SlugType {
   admin = 'admin',
   techLead = 'tech_lead',
   supervisor = 'supervisor',
   authorizationOfficer = 'authorization_officer',
   agent = 'agent',
 }
+
+export { TokenData, Login, SlugType }

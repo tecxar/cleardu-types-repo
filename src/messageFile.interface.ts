@@ -1,4 +1,4 @@
-export interface MessageFile {
+ interface MessageFile {
     id?: number;
     name: string;
     whatsApp: boolean;
@@ -14,4 +14,4 @@ export interface MessageFile {
     smsTemplateID?: number;
     whatsAppTemplateID?: number;
   }
-  
+  export { MessageFile }

@@ -1,4 +1,4 @@
-export interface CurrentCallInitiate {
+ interface CurrentCallInitiate {
     id?: number;
     caller: string;
     process: string;
@@ -9,3 +9,4 @@ export interface CurrentCallInitiate {
     type?: string;
     loanId: string;
   }
+  export { CurrentCallInitiate }

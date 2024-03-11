@@ -1,4 +1,4 @@
-export interface SettlementStatus {
+ interface SettlementStatus {
     id?: number;
     settlementId: number;
     status: string;
@@ -13,3 +13,5 @@ export interface SettlementStatus {
     settlementCount: number;
     statusCount: number;
   }
+
+  export { SettlementStatus, IsRejected }

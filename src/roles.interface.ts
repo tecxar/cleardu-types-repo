@@ -1,4 +1,4 @@
-export interface IRoles {
+ interface IRoles {
     id?: number;
     name: string;
     slug: string;
@@ -6,3 +6,4 @@ export interface IRoles {
     isActive: boolean;
   }
   
+  export { IRoles }

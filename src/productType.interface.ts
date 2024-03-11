@@ -1,5 +1,6 @@
-export interface ProductType {
+ interface ProductType {
     id?: number;
     name?: string;
     productTypeId?: number;
   }
+  export { ProductType }

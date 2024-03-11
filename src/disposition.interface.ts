@@ -1,12 +1,12 @@
 
-export interface SubDispositions {
+ interface SubDispositions {
     id?: number;
     dispositionId: number;
     name: string;
     isActive: boolean;
   }
 
-  export interface Dispositions {
+   interface Dispositions {
     id?: number;
     category?: string;
     name: string;
@@ -14,3 +14,4 @@ export interface SubDispositions {
     isActive: boolean;
     portal?: string;
   }
+  export { SubDispositions, Dispositions }

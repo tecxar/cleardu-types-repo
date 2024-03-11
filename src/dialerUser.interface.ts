@@ -1,4 +1,4 @@
-export interface DialerUsers {
+ interface DialerUsers {
     dialerProcess?: string;
     id?: number;
     userId: number;
@@ -17,4 +17,4 @@ export interface DialerUsers {
     updatedBy: number;
     dialerReferenceId?: string;
   }
-  
+  export { DialerUsers }

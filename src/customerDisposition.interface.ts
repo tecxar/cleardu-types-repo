@@ -1,4 +1,4 @@
-export interface CustomerDisposition {
+ interface CustomerDisposition {
     reminder?: boolean;
     reminderDate?: any;
     customerId: number;
@@ -15,7 +15,7 @@ export interface CustomerDisposition {
     portal?: string;
   }
 
-  export interface CrmData {
+   interface CrmData {
     convoxid?: string;
     agent_id?: string;
     callbackDate?: string;
@@ -26,7 +26,7 @@ export interface CustomerDisposition {
   }
 
   
-export interface CustomerDispositionSearch {
+ interface CustomerDispositionSearch {
     page?: number;
     pageSize?: number;
     searchStr?: string;
@@ -41,3 +41,4 @@ export interface CustomerDispositionSearch {
     portal?: string;
   }
   
+  export { CustomerDisposition, CrmData, CustomerDispositionSearch }

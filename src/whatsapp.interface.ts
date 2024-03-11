@@ -1,6 +1,6 @@
 import { MessageDirection, MessageStatus } from "./sms.interface";
 
-export interface Whatsapp {
+ interface Whatsapp {
     id?: number;
     customerID?: number;
     loanNumber: string;
@@ -16,6 +16,6 @@ export interface Whatsapp {
     isActive?: boolean;
     messageFileId?: number;
   }
-
+export { Whatsapp }
 
   

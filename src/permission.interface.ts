@@ -11,3 +11,5 @@ interface IPermissionModule {
   status: string;
   title: string;
 }
+
+export { IPermissionModule, PermissionArr }

@@ -1,4 +1,4 @@
-export interface SystemLogs {
+ interface SystemLogs {
     id?: number;
     eventType: string;
     logType: string;
@@ -8,3 +8,4 @@ export interface SystemLogs {
     customerId?: number;    
     // createdAt: Date;
   }
+  export { SystemLogs }

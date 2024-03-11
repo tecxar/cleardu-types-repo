@@ -1,4 +1,4 @@
-export interface GeneratedNotices {
+ interface GeneratedNotices {
     id: number;
     customerId: number;
     agentId: number;
@@ -23,25 +23,25 @@ export interface GeneratedNotices {
     s3DocumentKey?: string | null;
   }
 
-  export type GeneratedUploadNotice = Omit<GeneratedNotices, 'templateId'>;
+   type GeneratedUploadNotice = Omit<GeneratedNotices, 'templateId'>;
 
-  export interface WorkflowGenerated extends GeneratedNotices {
+   interface WorkflowGenerated extends GeneratedNotices {
     processConfigId: number;
     workflowConfigId?: number;
     documentKey: string;
     preview: boolean;
   }
 
-  export interface MessageData {
+   interface MessageData {
     message: string;
     modifiedData: any;
   }
-  export interface NoticeUpdateData {
+   interface NoticeUpdateData {
     customerId?: number;
     agentId?: number;
   }
 
-  export interface FilterPayload {
+   interface FilterPayload {
     categoryId?: number;
     categoryName?: string;
     subCategoryName?: string;
@@ -60,32 +60,32 @@ export interface GeneratedNotices {
       agent?: number;
     };
   }
-  export interface ExportFilter extends FilterPayload {
+   interface ExportFilter extends FilterPayload {
     isExport: boolean;
   }
 
-  export interface ElpasedDate {
+   interface ElpasedDate {
     approvedDate?: string | Date;
     currentDate?: string | Date;
   }
 
-  export interface AllNoticeResponse {
+   interface AllNoticeResponse {
     existingNotice: GeneratedNotices | null;
     updatedNotices: boolean | null;
   }
   
-  export interface UpdateNotice {
+   interface UpdateNotice {
     status?: string;
     postTrackingNumber?: string;
   }
   
-  export enum NoticeMessageStatus {
+   enum NoticeMessageStatus {
     Initiated = 'Initiated',
     Approved = 'Approved',
     Rejected = 'Rejected',
   }
 
-  export enum NoticeResponseEnumType {
+   enum NoticeResponseEnumType {
     SMS = 'SMS',
     EMAIL = 'EMAIL',
     WHATSAPP = 'WHATSAPP',
@@ -95,3 +95,5 @@ export interface GeneratedNotices {
     NEWSPAPERENGLISH = 'News paper english',
     NEWSPAPERVERNACULAR = 'News paper vernacular',
   }
+
+  export { NoticeResponseEnumType, NoticeMessageStatus, UpdateNotice, AllNoticeResponse, ElpasedDate, ExportFilter, NoticeUpdateData, MessageData, WorkflowGenerated, GeneratedUploadNotice, GeneratedNotices }

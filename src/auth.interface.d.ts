@@ -1,15 +1,15 @@
-export type GetModulesForSideBarMenu = {
+ type GetModulesForSideBarMenu = {
   title: string;
   link: string;
   icon: string;
   page: GetSlug[];
 }
 
-export type GetSlug =  {
+ type GetSlug =  {
   slug: string;
 }
 
-export type Login = {
+ type Login = {
   id: number;
   username: string;
   roleId: number;
@@ -33,3 +33,5 @@ export type Login = {
   legal?: Boolean;
   aoS3Key?: string;
 }
+
+export { GetModulesForSideBarMenu, Login, GetSlug }

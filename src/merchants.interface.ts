@@ -1,4 +1,4 @@
-export interface Merchants {
+ interface Merchants {
     id?: number;
     name: string;
     contactPerson?: string;
@@ -15,3 +15,4 @@ export interface Merchants {
     IsActive?: number;
   }
   
+  export { Merchants }

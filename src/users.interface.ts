@@ -1,4 +1,4 @@
-export interface User {
+ interface User {
     id?: number;
     firstName: string;
     lastName: string;
@@ -21,7 +21,7 @@ export interface User {
     aoS3Key?: string | null;
   }
   
-  export interface DialerUser {
+   interface DialerUser {
     userId: number;
     dialerId: number;
     userName: string;
@@ -31,13 +31,13 @@ export interface User {
     extensionNumber: number;
   }
 
-  export interface UserManager {
+   interface UserManager {
     id?: number;
     userId: number;
     managerId: number;
   }
   
-  export interface UserData {
+   interface UserData {
     firstName: string;
     id: number;
     legal: number;
@@ -46,14 +46,14 @@ export interface User {
     collectionCount: number;
   }
 
-  export interface SupervisorPlatformData {
+   interface SupervisorPlatformData {
     id: number;
     supervisorId: number;
     legal: number;
     collection: number;
   }
 
-  export interface UserDetails {
+   interface UserDetails {
     id: number;
     name?: string;
     lastName?: string;
@@ -71,3 +71,4 @@ export interface User {
     collection?: number | null;
   }
   
+  export { User, UserDetails, SupervisorPlatformData, UserData, UserManager, DialerUser }

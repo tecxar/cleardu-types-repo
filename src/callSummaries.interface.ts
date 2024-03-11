@@ -1,4 +1,4 @@
-export interface CallSummaries {
+ interface CallSummaries {
     id?: number;
     mobileNo: string;
     userId: string;
@@ -26,7 +26,7 @@ export interface CallSummaries {
     comments?: string;
     customerDispositionId?: number | null;
   }
-  export interface CallSummariesPayload {
+   interface CallSummariesPayload {
     page?: number;
     pageSize?: number;
     searchStr?: string;
@@ -41,3 +41,5 @@ export interface CallSummaries {
     };
     portal?: string;
   }
+
+  export { CallSummaries, CallSummariesPayload  }

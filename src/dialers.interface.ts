@@ -1,4 +1,4 @@
-export interface Dialers {
+ interface Dialers {
     id?: number;
     userId?: number;
     dialerId?: number;
@@ -6,4 +6,4 @@ export interface Dialers {
     isActive: boolean;
     name?: string;
   }
-  
+  export { Dialers }

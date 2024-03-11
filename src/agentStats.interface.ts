@@ -1,4 +1,4 @@
-export interface AgentStats {
+interface AgentStats {
   id?: number;
   agentId?: number;
   ptpAmount?: number;
@@ -24,3 +24,5 @@ export interface AgentStats {
   totalPaymentAmount?: number;
   totalPaymentCount?: number;
 }
+
+export { AgentStats }

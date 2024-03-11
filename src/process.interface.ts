@@ -1,4 +1,4 @@
-export interface Process {
+ interface Process {
     id?: number;
     processName: string;
     dialerProcessId?: string;
@@ -13,17 +13,17 @@ export interface Process {
     length?: number;
   }
 
-  export interface ProcessData extends Process {
+   interface ProcessData extends Process {
     processConfigId: number;
   }
-  export interface ConfigPayload {
+   interface ConfigPayload {
     isExport: boolean;
     page?: number;
     size?: number;
     searchStr?: string;
   }
 
-  export interface ProcessConfig {
+   interface ProcessConfig {
     id?: number;
     clientId: number;
     processName?: string;
@@ -57,3 +57,5 @@ export interface Process {
     authOfficerId?: number;
     workflowCategoryId?: number;
   }
+
+  export { Process, ProcessData, ConfigPayload, ProcessConfig }

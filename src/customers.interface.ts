@@ -1,4 +1,4 @@
-export interface Customers {
+ interface Customers {
     id?: number;
     clientId?: number;
     processId?: number;
@@ -88,7 +88,7 @@ export interface Customers {
     processName?: string;
   }
   
-export interface customerSearchData {
+ interface customerSearchData {
     page?: number;
     pageSize?: number;
     q?: string;
@@ -101,7 +101,7 @@ export interface customerSearchData {
     };
   }
   
-  export interface CustomersById {
+   interface CustomersById {
     id?: number | null;
     clientId?: number | null;
     processId?: number | null;
@@ -183,16 +183,16 @@ export interface customerSearchData {
   }
 
 
-  export interface CustomerDataByProcess {
+   interface CustomerDataByProcess {
     dialerProcessId?: string;
   }
 
-  export interface ICustomerUpdate extends Partial<Customers> {
+   interface ICustomerUpdate extends Partial<Customers> {
     agentId?: number;
     processId?: number;
   }
 
-  export interface ReassignAgentToCustomer {
+   interface ReassignAgentToCustomer {
     agentId: number;
     clientId: number;
     processId: number;
@@ -201,13 +201,13 @@ export interface customerSearchData {
     updatedBy: number;
   }
 
-  export interface CustomerLoanNumber extends Customers {
+   interface CustomerLoanNumber extends Customers {
     clientid?: {
       name?: string;
     };
   }
 
-  export interface CustomerTemplateDetails {
+   interface CustomerTemplateDetails {
     clientName?: string;
     currentDate?: string;
     loanAmount?: number;
@@ -235,3 +235,5 @@ export interface customerSearchData {
     guarantor1Address?: string;
     disbursedDate?: string;
   }
+
+  export { Customers, customerSearchData, CustomersById, CustomerDataByProcess, ICustomerUpdate,  ReassignAgentToCustomer, CustomerLoanNumber, CustomerTemplateDetails }

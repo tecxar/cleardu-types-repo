@@ -1,4 +1,4 @@
-export interface AgentStatus {
+ interface AgentStatus {
   id?: number;
   callerId?: string;
   agentId: string;
@@ -7,7 +7,7 @@ export interface AgentStatus {
   oncallQueue?: string;
   process?: string;
 }
-export interface AgentActivities {
+ interface AgentActivities {
   agentId: string;
   userName: string;
   loginHrs: string;
@@ -16,7 +16,7 @@ export interface AgentActivities {
   avgLogin: string;
   avgLogout: string;
 }
-export interface AgentActivitiesSearchData {
+ interface AgentActivitiesSearchData {
   page?: number;
   pageSize?: number;
   searchStr?: string;
@@ -28,7 +28,4 @@ export interface AgentActivitiesSearchData {
   };
 }
 
-// export interface AgentActivitiesRowsCount {
-//   count: number;
-//   rows: AgentActivities[];
-// }
+export { AgentStatus, AgentActivities, AgentActivitiesSearchData }
