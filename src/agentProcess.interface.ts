@@ -11,7 +11,7 @@ interface AgentProcessData extends AgentProcess {
   updatedAt?: Date | string;
 }
 
-interface AgentProcessMappingResponse {
+interface AgentListResponse {
   id: number,
   lastName: string,
   managers: string,
@@ -29,4 +29,4 @@ interface AgentProcessMappingResponse {
   "agents.dialerReferenceId": string;
 }
 
-export { AgentProcess, AgentProcessData, AgentProcessMappingResponse };
+export { AgentProcess, AgentProcessData, AgentListResponse };
