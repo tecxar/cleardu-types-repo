@@ -88,7 +88,7 @@
     isLoading?: boolean;
   }
 
-   interface ProcessData extends Process {
+   interface ProcessData extends ProcessList {
     processConfigId: number;
   }
    interface ConfigPayload {
