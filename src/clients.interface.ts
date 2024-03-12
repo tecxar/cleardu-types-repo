@@ -12,4 +12,10 @@
     state?: string;
     isISG?: number;
   }
-  export { ClientResponse }
+
+  interface ClientDropDownResponse {
+    id: number;
+    name: string;
+  }
+
+  export { ClientResponse, ClientDropDownResponse }
