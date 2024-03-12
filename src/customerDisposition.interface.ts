@@ -1,4 +1,4 @@
- interface CustomerDisposition {
+ interface CustomerDispositionList {
     reminder?: boolean;
     reminderDate?: any;
     customerId: number;
@@ -41,4 +41,4 @@
     portal?: string;
   }
   
-  export { CustomerDisposition, CrmData, CustomerDispositionSearch }
+  export { CustomerDispositionList, CrmData, CustomerDispositionSearch }
